@@ -12,15 +12,44 @@
 
 <body>
     <header id="header" class="container1">
+        <div class="logo">
+            <img src="Gallery/oie_JLazNV7mel70.png" id="header-img" alt="Company's logo">
+        </div>
         <nav id="nav-bar">
-            <img src="Gallery/0af6c080-fe80-4957-b3f5-95ee4c70f4ee_200x200.png" id="header-img" alt="Company's logo">
             <a id="nav-link" href="#aboutUs">About us</a>
-            <a id="nav-link" href="#ownerOperators">Owner operators</a>
+            <a id="nav-link" href="#form">Owner operators</a>
             <a id="nav-link" href="#ourLocations">Our locations</a>
             <a id="nav-link" href="#contactUs">Contact us</a>
         </nav>
     </header>
+<div class="container">
+    <iframe width="35%" height="auto" src="https://www.youtube.com/embed/M7FIvfx5J10" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+</div>
 
+<form id="form">
+    <div class="form-table">
+        <div class="position1">
+            <label id="name-label" for="name">Name*</label>
+            <div><input type="text" id="name" maxlength="255" minlength="1" placeholder="Enter your name" required />
+            </div>
+        </div>
+        <div class="position2">
+            <label id="email-label" for="email">Email*</label>
+            <div><input type="email" id="email" placeholder="Enter your email" required /></div>
+        </div>
+        <div class="position3">
+            <label id="number-label" for="number">Age*</label>
+            <div><input type="number" id="number" name="age" min="1" max="99" placeholder="Age(Optional)" required />
+            </div>
+        </div>
+        
+        </div>
+        <div class="position4">
+            <button class="btn" id="submit">SUBMIT</button>
+        </div>
+    </form>
 
 </body>
 
