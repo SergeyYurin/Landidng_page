@@ -82,13 +82,6 @@ body {
     }
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    margin-top: 22%;
-    left: 50%;
-}
 
 form {
     position: relative;
