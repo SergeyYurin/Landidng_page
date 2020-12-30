@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="styleLandingPage.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/6b5dbc708d.js" crossorigin="anonymous"></script>
 
 <head>
     <title>
@@ -69,7 +72,43 @@
                 <li>579 N Kenmore Ave. Chicago IL 66098</li>
             </ol>
         </div>
+        <footer id="footer">
+            <a href="https://www.instagram.com/sergey._yurin/?hl=en" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.instagram.com/kristinakris1992/?hl=en" class="fa fa-instagram" target="_blank"></a>
+            <figure class="fullCard">
+                <header class="header-position">
+                    <figcaption class="profile-name">
+                        <h3>Sergey Yurin</h3>
+                        <h4>@RealSergeyYurin</h4>
+                    </figcaption>
+                    <figcaption class="follow-btn">
+                        <a href="https://twitter.com/RealSergeyYurin" class="twitter-follow-button" data-show-count="false"
+                            data-show-screen-name="false" data-size="large">Follow</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </figcaption>
+                </header>
+            </figure>
+        </footer>
     </main>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 60) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+    </script>
 </body>
 
 </html>

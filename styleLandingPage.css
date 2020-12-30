@@ -35,10 +35,12 @@ body {
 }
 
 #header {
-    position: sticky;
+    position: fixed;
+    left: 0;
     width: 100vw;
     min-height: 75px;
-    display:flex;
+    display: flex;
+    z-index: 1;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     top: 0;
     vertical-align: top;
@@ -46,7 +48,7 @@ body {
     align-items: center;
     padding: 0px 20px;
     margin: 0 0 20px 0;
-    background-color: #e68a43;
+    background-image: linear-gradient(#e46809, #914104);
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 300;
@@ -140,7 +142,6 @@ input, button {
     border-radius: 5px;
 }
 
-
 .btn {
     position: relative;
     background-color: rgb(24, 169, 96);
@@ -220,4 +221,117 @@ li {
 
 .position4 {
     order: 4;
+}
+
+.fa {
+    float: left;
+    padding: 10px 15px 10px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    animation-name: background-color;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    color: rgb(255, 255, 255);
+}
+
+.fa-instagram {
+    background: #404344;
+    color: #eeeeee;
+}
+
+.fullCard {
+    float: right;
+    background-color: #00acee;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.header-position {
+    display: flex;
+}
+
+header .profile-name {
+    display: flex;
+    padding-right: 5px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header h3, header h4 {
+    display: flex;
+    margin: auto;
+    vertical-align: middle;
+    text-align: justify;
+    position: relative;
+}
+
+header .follow-btn {
+    display: flex;
+    position: relative;
+}
+
+/*#footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #eeeeee;
+    color: white;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 75px;
+    display: flex;
+    grid-template-columns: 5% 5% 40% 40% 10%;
+    vertical-align: middle;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 0 0 20px 0;
+    background-image: linear-gradient(#e46809, #914104);
+    font-size: 15px;
+    font-weight: 100;
+} */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 13.5%;
+    left: 18px;
+    z-index: 99;
+    font-size: 29px;
+    border: none;
+    outline: none;
+    background-color: #404344;
+    color: #eeeeee;
+    cursor: pointer;
+    padding: 15px 17px;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    animation-name: background-color;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes background-color {
+    100% {
+        background-color: rgb(194, 67, 148);
+    }
 }
