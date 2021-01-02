@@ -48,7 +48,7 @@ body {
     align-items: center;
     padding: 0px 20px;
     margin: 0 0 20px 0;
-    background-image: linear-gradient(#e46809, #914104);
+    background-color: #e16c12;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 300;
@@ -76,12 +76,14 @@ body {
 
 @keyframes activeColor {
     100% {
-        background-color: #e16c12;
+        background-color: #914104;
+        /*background-image: linear-gradient(#914104, #e46809, #914104);*/
         color: white;
     }
 }
 
 main {
+    margin-top: 100px;
     display: grid;
     grid-template-columns: auto 80% auto;
     grid-template-rows: 500px auto;
@@ -282,21 +284,27 @@ header .follow-btn {
     position: relative;
 }
 
-/*#footer {
-    text-align: center;
+#footer {
     padding: 3px;
-    background-color: #eeeeee;
+    bottom: 0;
+    width: 100%;
+    float: left;
+    left: 0;
+    height: 75px;
+    grid-template-columns: 5% 5% 40% 40% 10%;
+    vertical-align: middle;
+    background-color: #e68a43;
     color: white;
 }
 
-#footer {
+/* #footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100vw;
     min-height: 75px;
     display: flex;
-    grid-template-columns: 5% 5% 40% 40% 10%;
+    
     vertical-align: middle;
     justify-content: space-around;
     align-items: center;
