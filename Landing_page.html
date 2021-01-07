@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="styleLandingPage.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/6b5dbc708d.js" crossorigin="anonymous"></script>
+<script src="Landing.js"></script>
 
 <head>
     <title>
@@ -26,6 +27,7 @@
             <a id="nav-link" href="#contactUs">Contact us</a>
         </nav>
     </header>
+    
     <main>
         <div class="box1"></div>
         <div id="video" class="video">
@@ -72,26 +74,10 @@
                 <li>579 N Kenmore Ave. Chicago IL 66098</li>
             </ol>
         </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     </main>
-    <script>
-        var mybutton = document.getElementById("myBtn");
-        window.onscroll = function () {
-            scrollFunction()
-        };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 60) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 </body>
     <footer id="footer">
         <a href="https://www.instagram.com/sergey._yurin/?hl=en" class="fa fa-instagram" target="_blank"></a>
