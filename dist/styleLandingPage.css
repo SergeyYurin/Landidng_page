@@ -1,0 +1,363 @@
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #00acee;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+}
+
+#nav-bar {
+    justify-self: center;
+    padding: auto;
+    margin: 0 auto 0 auto;
+}
+
+.logo>img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#header {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    min-height: 75px;
+    display: flex;
+    z-index: 1;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    top: 0;
+    vertical-align: top;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 0 0 20px 0;
+    background-color: #e16c12;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+@media (max-width: 1300px) {
+    #header {
+        font-size: 20px;
+    }
+}
+
+#header a {
+    float: left;
+    color: #e1e1e1;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+#header a:hover {
+    animation-name: activeColor;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes activeColor {
+    100% {
+        background-color: #914104;
+        /*background-image: linear-gradient(#914104, #e46809, #914104);*/
+        color: white;
+    }
+}
+
+main {
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: auto 80% auto;
+    grid-template-rows: 500px auto;
+}
+
+.video {
+    width: 100%;
+    height: 500px;
+    vertical-align: middle;
+    text-align: center;
+    justify-self: center;
+    overflow: hidden;
+}
+
+iframe {
+    width: 60%;
+    height: 350px;
+    border: 5px;
+    border-color: #e16c12;
+    border-radius: 5px;
+    box-shadow: 10px 30px 10px 10px rgba(0, 0, 0, 0.19), 0 40px 40px rgba(0, 0, 0, 0.23);
+}
+
+form {
+    position: relative;
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e68a43;
+    border-radius: 5px;
+    box-shadow: 10px 30px 10px 10px rgba(0, 0, 0, 0.19), 0 40px 40px rgba(0, 0, 0, 0.23);
+}
+
+label {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+input, button {
+    margin: 8px 0 8px 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid white;
+    -ms-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    border-radius: 5px;
+}
+
+.btn {
+    position: relative;
+    background-color: rgb(24, 169, 96);
+    border: none;
+    color: white;
+    width: 100%;
+    text-decoration: inherit;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    text-justify: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+#email {
+    background: white;
+    width: 100%;
+}
+
+#name {
+    background: white;
+    width: 100%;
+}
+
+#number {
+    background: white;
+    width: 100%;
+}
+
+#ourLocations {
+    position: relative;
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e68a43;
+    border-radius: 5px;
+    box-shadow: 10px 30px 10px 10px rgba(0, 0, 0, 0.19), 0 40px 40px rgba(0, 0, 0, 0.23);
+}
+
+.locationsName {
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    align-items: center;
+}
+
+li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-justify: auto;
+    align-items: center;
+}
+
+.position1 {
+    order: 1;
+}
+
+.position2 {
+    order: 2;
+}
+
+.position3 {
+    order: 3;
+}
+
+.position4 {
+    order: 4;
+}
+
+.fa {
+    float: left;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    animation-name: background-color;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    color: rgb(255, 255, 255);
+}
+
+.fa-instagram {
+    background: #404344;
+    color: #eeeeee;
+}
+
+.fullCard {
+    float: right;
+    background-color: #00acee;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    margin: 5px 20px 5px auto;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.header-position {
+    display: flex;
+}
+
+header .profile-name {
+    display: flex;
+    padding-right: 5px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header h3, header h4 {
+    display: flex;
+    margin: auto;
+    vertical-align: middle;
+    text-align: justify;
+    position: relative;
+}
+
+header .follow-btn {
+    display: flex;
+    position: relative;
+}
+
+#footer {
+    padding: 3px;
+    bottom: 0;
+    width: 100%;
+    float: left;
+    left: 0;
+    height: 75px;
+    grid-template-columns: 5% 5% 40% 40% 10%;
+    vertical-align: middle;
+    background-color: #e68a43;
+    color: white;
+}
+
+/* #footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 75px;
+    display: flex;
+    
+    vertical-align: middle;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 0 0 20px 0;
+    background-image: linear-gradient(#e46809, #914104);
+    font-size: 15px;
+    font-weight: 100;
+} */
+
+#myBtn:hover {
+    animation-name: background-color;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes background-color {
+    100% {
+        background-color: #914104;
+    }
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
