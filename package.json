@@ -4,7 +4,7 @@
   "description": "Landing page assignment from Freecodecamp.org",
   "main": "Landing.js",
   "scripts": {
-    "deploy": "gh-pages -"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
